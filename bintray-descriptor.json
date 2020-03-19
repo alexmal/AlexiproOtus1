@@ -1,8 +1,8 @@
 {
   "package": {
-    "name": "alexipro_otus_01",
-    "repo": "AlexiproOtus1",
-    "subject": "alexmal",
+    "name": "otus-cpp",
+    "repo": "homeworks",
+    "subject": "alexipro",
     "vcs_url": "https://github.com/alexmal/AlexiproOtus1.git"
   },
   "version": {
