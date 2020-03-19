@@ -34,7 +34,7 @@ target_link_libraries(otus_01_cli alexipro_otus_01)
 
 install(TARGETS otus_01_cli RUNTIME DESTINATION bin)
 
-set(CPACK_GENERATOR TGZ)
+set(CPACK_GENERATOR deb)
 
 set(CPACK_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
 set(CPACK_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
