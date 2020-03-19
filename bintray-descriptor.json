@@ -1,0 +1,27 @@
+{
+  "package": {
+    "name": "alexipro_otus_01",
+    "repo": "AlexiproOtus1",
+    "subject": "alexmal",
+    "vcs_url": "https://github.com/alexmal/AlexiproOtus1.git"
+  },
+  "version": {
+    "name": "__VERSION__",
+    "desc": "alexipro otus homeworld 01 __VERSION__"
+  },
+  "licenses": ["BSD"],
+  "desc": "Debian package built and deployed completely automatically",
+  "files": [
+    {
+      "includePattern": "./(.[^/]*(\\.deb)$)",
+      "uploadPattern": "$1",
+      "matrixParams": {
+        "deb_distribution": "xenial",
+        "deb_component": "main",
+        "deb_architecture": "amd64"
+      }
+    }
+  ],
+  "public": true,
+  "override": false
+}

@@ -11,7 +11,14 @@ script:
   - cmake --build .
   - cmake --build . --target test
   - cmake --build . --target package
+
+before_deploy:
+  - sed - "s/__VERSION__/$TRAVIS_BUILD_NUMBER/g" bintray-descriptor.json
+  - cat bintray-descriptor.json
+
 deploy:
-  provider: script
   skip_cleanup: true
-  script:
+  provider: bintray
+  file: bintray-descriptor.json
+  user: $BINTRAY_USER
+  key: $BINTRAY_API_KEY
