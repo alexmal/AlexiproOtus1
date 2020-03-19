@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.12)
-project(alexipro_otus_01 VERSION 0.0.$ENV{$TRAVIS_BUILD_NUMBER})
+project(alexipro_otus_01 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 set(CMAKE_CXX_STANDARD 17)
 #include_directories(/usr/local/Cellar/spdlog/1.5.0/include)
 #include_directories(/usr/local/include)
 
-set(PROJECT_VERSION_PATCH 1)
+#set(PROJECT_VERSION_PATCH 1)
 
 find_package(SPDLog)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
