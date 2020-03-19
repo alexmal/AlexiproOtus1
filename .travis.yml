@@ -7,7 +7,6 @@ addons:
       - libboost-test-dev
       - libspdlog-dev
 script:
-  - cat $TRAVIS_BUILD_NUMBER
   - cmake .
   - cmake --build .
   - cmake --build . --target test
