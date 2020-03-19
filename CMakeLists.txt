@@ -30,7 +30,7 @@ set_target_properties(test_version PROPERTIES
         )
 
 target_link_libraries(test_version alexipro_otus_01 ${Boost_LIBRARIES})
-target_link_libraries(otus_01_cli alexipro_otus_01)
+target_link_libraries(otus_01_cli alexipro_otus_01 pthread)
 
 install(TARGETS otus_01_cli RUNTIME DESTINATION bin)
 
