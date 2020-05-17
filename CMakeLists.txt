@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 project(alexipro_otus_01 VERSION 0.0.$ENV{GITHUB_RUN_ID})
-message(${GITHUB_RUN_ID})
+message($ENV{GITHUB_RUN_ID})
 
 set(CMAKE_CXX_STANDARD 17)
 #include_directories(/usr/local/Cellar/spdlog/1.5.0/include)
