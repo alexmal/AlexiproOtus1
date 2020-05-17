@@ -15,7 +15,7 @@ jobs:
     - name: add repo boost
       run: sudo add-apt-repository ppa:mhier/libboost-latest && sudo apt update
     - name: Install spdlog and boost
-      run: sudo apt install -y libspdlog-dev libboost-test
+      run: sudo apt install -y libspdlog-dev libboost
     - name: configure
       run: mkdir build && cd build && cmake -DCMAKE_CXX_FLAGS="-Werror" ..
     - name: build
