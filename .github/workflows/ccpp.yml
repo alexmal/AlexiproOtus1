@@ -23,4 +23,4 @@ jobs:
     - name: test
       run: cd build && ctest
     - name: cpack
-      run: cmake --build .. && cmake --build .. --target test && cmake --build .. --target package
+      run: cd build && cmake .. && cmake --build .. && cmake --build .. --target test && cmake --build .. --target package
