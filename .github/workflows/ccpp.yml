@@ -12,6 +12,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: add repo boost
+      run: sudo add-apt-repository ppa:mhier/libboost-latest && sudo apt update
     - name: Install spdlog and boost
       run: sudo apt install -y libspdlog-dev libboost-test-dev
     - name: configure
