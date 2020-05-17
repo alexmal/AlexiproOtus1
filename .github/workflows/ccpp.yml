@@ -9,6 +9,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: Install spdlog and boost
+      run: sudo apt install -y libspdlog-dev libboost-test-dev
     - name: configure
       run: mkdir build && cd build && cmake -DCMAKE_CXX_FLAGS="-Werror" ..
     - name: build
